@@ -119,37 +119,3 @@
     \includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/phone-240.png} +33 07 49 18 55 00\\
     \includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/email-240.png} \href{mailto:guitrofino@gmail.com}{guitrofino@gmail.com}\\
 }
-
-\newcommand{\summary}[2]{
-    \begin{multicols}{2}
-    \noindent \textit{#1}
-
-    \columnbreak
-
-    \noindent #2
-    \end{multicols}
-}
-
-
-% cv building block
-\newcommand{\topicblock}[5]{
-    \subsection*{#1}
-    \textcolor{\cvcolor}{\textbf{#2}}\hfill\includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/location-240.png} #3\qquad\includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/calendar-240.png} #4
-
-    \begin{indented}
-        \item[]#5
-    \end{indented}
-}
-
-\newenvironment{indented}{
-    \begin{list}{}{
-        \setlength{\leftmargin}{5mm}
-        \setlength{\parsep}{0mm}
-        \setlength{\parskip}{0mm}
-        \setlength{\itemsep}{0mm}
-        \setlength{\topsep}{0mm}
-    }}{\end{list}}
-
-\newcommand{\topicline}[2]{
-    \textbf{#1}: #2\\
-}
