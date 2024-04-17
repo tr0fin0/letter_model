@@ -27,6 +27,7 @@
 \usepackage[english, french, portuguese]{babel}
 \usepackage{iflang} 
 \usepackage{graphicx}
+\usepackage[export]{adjustbox}
 \usepackage{hyperref}
 
 \usepackage[dvipsnames]{xcolor}
@@ -118,4 +119,16 @@
     \includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/location-240.png} 270 Rue Saint-Jacques. 75005 Paris - France\\
     \includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/phone-240.png} +33 07 49 18 55 00\\
     \includegraphics[width=\imagescale\baselineskip, height=\imagescale\baselineskip]{package/icons/email-240.png} \href{mailto:guitrofino@gmail.com}{guitrofino@gmail.com}\\
+}
+
+\newcommand{\signoff}{
+    \vspace{10mm}
+    
+    \hfill Guilherme NUNES TROFINO
+    \begin{figure}[h]
+        \includegraphics[height=10mm, right]{package/images/signature.png}
+    \end{figure}
+
+    \vfill
+    {\color{\cvcolor}\titlerule[0.5mm]}
 }
